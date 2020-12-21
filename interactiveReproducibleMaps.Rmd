@@ -1,10 +1,17 @@
-knitr::opts_chunk$set(echo = TRUE)
+## installation
+install.packages("leaflet")
 
-rm(list = ls()) # clear all environment variables
+# clear all environment variables
 
 suppressPackageStartupMessages(library(leaflet))
 
 suppressPackageStartupMessages(library(rgdal))
+
+knitr::opts_chunk$set(echo = TRUE)
+
+## First map
+
+rm(list = ls()) 
 
 resource <- "https://raw.githubusercontent.com/datasets/geo-boundaries-world-110m/master/countries.geojson"
 
